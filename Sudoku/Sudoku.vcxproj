@@ -41,6 +41,8 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LinkIncremental>true</LinkIncremental>
+    <LibraryPath>C:\Users\theGR\source\repos\Sudoku\Sudoku\x64\Debug\cuNet.exe;$(LibraryPath)</LibraryPath>
+    <PublicIncludeDirectories>C:\Users\theGR\source\repos\Sudoku\Sudoku\x64\Debug\cuNet.exe</PublicIncludeDirectories>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
@@ -78,6 +80,11 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <CudaCompile Include="kernel.cu" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\GriceRory\cuNet\cuNet\cuNet\cuNet.vcxproj">
+      <Project>{bcb03c68-c15f-44ad-b289-1f2f5010a911}</Project>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
