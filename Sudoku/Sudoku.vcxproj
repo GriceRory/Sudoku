@@ -83,8 +83,8 @@
     <CudaCompile Include="Sudoku.cu" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\GriceRory\cuNet\cuNet\cuNet\cuNet.vcxproj">
-      <Project>{bcb03c68-c15f-44ad-b289-1f2f5010a911}</Project>
+    <ProjectReference Include="..\..\cuNet\cuNet\cuNet.vcxproj">
+      <Project>{2e4d1ca2-318d-429e-8bd4-6a5c225b7be3}</Project>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

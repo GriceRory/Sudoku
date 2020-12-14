@@ -3,7 +3,7 @@
 #include "cuda_runtime.h"
 #include "device_launch_parameters.h"
 #include <stdio.h>
-#include "../../GriceRory/cuNet/cuNet/cuNet/cuNet.h"
+#include "../../cuNet/cuNet/cuNet.h"
 
 struct board {
     int* contents;
@@ -30,11 +30,11 @@ int main(){
 }
 
 //AI
-void guess_element(board b, int row, int col, network net) {
+void guess_element(board b, int row, int col, network net, cudaStream_t *streams, int number_of_streans) {
     int boardSize = b.subBoardDimentions * b.subBoardDimentions;
     vector *guesses = build_vector(boardSize);
-    vector* input = build_vector(boardSize*boardSize);
-    run_network(net, *input, guesses);
+    vector *input = build_vector(boardSize*boardSize);
+    run_network(net, *input, guesses, streams[0]);
 }
 //AI ends
 

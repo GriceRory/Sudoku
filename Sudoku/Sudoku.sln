@@ -5,7 +5,7 @@ VisualStudioVersion = 16.0.30804.86
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Sudoku", "Sudoku.vcxproj", "{B7172C79-551D-4779-B9DD-7DEBE919AAE6}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "cuNet", "..\..\GriceRory\cuNet\cuNet\cuNet\cuNet.vcxproj", "{BCB03C68-C15F-44AD-B289-1F2F5010A911}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "cuNet", "..\..\cuNet\cuNet\cuNet.vcxproj", "{2E4D1CA2-318D-429E-8BD4-6A5C225B7BE3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,10 +17,10 @@ Global
 		{B7172C79-551D-4779-B9DD-7DEBE919AAE6}.Debug|x64.Build.0 = Debug|x64
 		{B7172C79-551D-4779-B9DD-7DEBE919AAE6}.Release|x64.ActiveCfg = Release|x64
 		{B7172C79-551D-4779-B9DD-7DEBE919AAE6}.Release|x64.Build.0 = Release|x64
-		{BCB03C68-C15F-44AD-B289-1F2F5010A911}.Debug|x64.ActiveCfg = Debug|x64
-		{BCB03C68-C15F-44AD-B289-1F2F5010A911}.Debug|x64.Build.0 = Debug|x64
-		{BCB03C68-C15F-44AD-B289-1F2F5010A911}.Release|x64.ActiveCfg = Release|x64
-		{BCB03C68-C15F-44AD-B289-1F2F5010A911}.Release|x64.Build.0 = Release|x64
+		{2E4D1CA2-318D-429E-8BD4-6A5C225B7BE3}.Debug|x64.ActiveCfg = Debug|x64
+		{2E4D1CA2-318D-429E-8BD4-6A5C225B7BE3}.Debug|x64.Build.0 = Debug|x64
+		{2E4D1CA2-318D-429E-8BD4-6A5C225B7BE3}.Release|x64.ActiveCfg = Release|x64
+		{2E4D1CA2-318D-429E-8BD4-6A5C225B7BE3}.Release|x64.Build.0 = Release|x64
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
