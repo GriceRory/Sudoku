@@ -54,6 +54,7 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <SubSystem>Console</SubSystem>
       <AdditionalDependencies>cudart_static.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:\Users\theGR\source\repos\GriceRory\cuNet\cuNet\cuNet;C:\Users\theGR\source\repos\Sudoku\Sudoku\x64\Debug\cuNet.exe;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Link>
     <CudaCompile>
       <TargetMachinePlatform>64</TargetMachinePlatform>
@@ -79,7 +80,7 @@
     </CudaCompile>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <CudaCompile Include="kernel.cu" />
+    <CudaCompile Include="Sudoku.cu" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\GriceRory\cuNet\cuNet\cuNet\cuNet.vcxproj">

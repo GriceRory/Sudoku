@@ -2,8 +2,8 @@
 
 #include "cuda_runtime.h"
 #include "device_launch_parameters.h"
-//#include "cuNet.h"
 #include <stdio.h>
+#include "../../GriceRory/cuNet/cuNet/cuNet/cuNet.h"
 
 struct board {
     int* contents;
@@ -11,27 +11,49 @@ struct board {
     int subBoardDimentions;
 };
 
+int get_guess(board b, int row, int col);
+void set_guess(board b, int row, int col, int val);
 void set_element(board b, int row, int col, int val);
 int get_element(board b, int row, int col);
+
 int validBoard(board b);
 int validSubBoard(board b, int sub);
 int validCol(board b, int col);
 int validCol(board b, int row);
+
+void guess_element(board b, int row, int col, network net);
+
 
 int main(){
 
     return 0;
 }
 
+//AI
+void guess_element(board b, int row, int col, network net) {
+    int boardSize = b.subBoardDimentions * b.subBoardDimentions;
+    vector *guesses = build_vector(boardSize);
+    vector* input = build_vector(boardSize*boardSize);
+    run_network(net, *input, guesses);
+}
+//AI ends
 
 
 
+//memory manipulation
+void set_guess(board b, int row, int col, int val) {
+    b.contents[row * b.subBoardDimentions * b.subBoardDimentions + col] = val;
+}
+int get_guess(board b, int row, int col) {
+    return b.contents[row * b.subBoardDimentions * b.subBoardDimentions + col];
+}
 void set_element(board b, int row, int col, int val) {
     b.contents[row * b.subBoardDimentions * b.subBoardDimentions + col] = val;
 }
 int get_element(board b, int row, int col) {
     return b.contents[row * b.subBoardDimentions * b.subBoardDimentions + col];
 }
+//memory manipulation ends
 
 //rules
 int validSubBoard(board b, int sub) {
